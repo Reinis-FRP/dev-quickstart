@@ -52,7 +52,7 @@ contract InsuranceArbitrator {
     string constant ancillaryDataHead = 'q:"Had the following insured event occurred as of request timestamp: ';
     string constant ancillaryDataTail = '?"';
 
-    FinderInterface public immutable finder; // Finder for UMA contracts.
+    FinderInterface public finder; // Finder for UMA contracts.
 
     OptimisticOracleV2Interface public immutable oo; // Optimistic Oracle instance where claims are resolved.
 
